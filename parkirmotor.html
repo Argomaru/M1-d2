@@ -1,0 +1,42 @@
+<script>
+    /*
+    var inivar = 1
+    //redeclare
+    var inivar = 2
+    //redesign
+    inivar = 2
+
+    let inilet = 1
+    //reassign
+    //tidak bisa di redeclear
+
+    const iniconst = 1
+    //tidak bisa di redeclear
+    //tidak bisa di reassign
+*/
+
+</script>
+
+<script>
+// parkiran motor
+let duration = prompt("berapa lama anda parkir?")
+let firsthour = 2000
+let feeperhour = 1000
+let maxfee = 25000
+let total = 0
+
+if (duration < 2){
+    total = firsthour
+    // durasi dibawah 2 jam
+}
+else if( duration >=2){
+    total = firsthour + (feeperhour * (duration - 1))
+    // durasi diatas 2 jam 
+}
+
+if (total > maxfee){
+    total = maxfee
+}
+
+alert(`total biaya parkir anda Rp ${total}`)
+</script>
